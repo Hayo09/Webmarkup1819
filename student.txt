@@ -1,0 +1,3 @@
+student name : Hayo Bos
+student number : 633143
+student class : INF1Sc
