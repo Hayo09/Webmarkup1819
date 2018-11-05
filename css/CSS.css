@@ -1,41 +1,45 @@
 
 
 body {
-	background-image: url("img/background.jpeg");
+	background-image:url('img/background.jpeg');
 	background-color: #cccccc;
 	font-family: Times New Roman, Times, serif;
 	text-transform: uppercase;
 	color: #FFFFFF;
 	text-align: center;	
+	font-weight: bold;
 }
 
 h1 {
-	background-image: url("img/comapanylogoBG.jpg");
+	background-image: url('img/comapanylogoBG.jpg');
+	background-size: 100% 140%;
 	position: relative;
 	left: 25%;
 	width: 25%;
+	height: 14%;
 	padding-left: 12.5%;
 	padding-right: 12.5%;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	font-size: 2em;
+	margin-bottom: 0px;
+	font-size: 3em;
 }
 
-h2 {
+section {
 	background-color: #2699FB;
 	position: relative;
-	height: 10%;
+	height: 14%;
 	left: 25%;
 	width: 50%;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	font-size: 2.7em;
+	font-size: 3.2em;
 }
-
+	
 img {
 	left: 25%;
 	width: 50%;
-	height: 13%;
+	height: 40%;
 }
 
 nav {
@@ -45,7 +49,8 @@ nav {
 	font-size: 1em;
 	word-spacing: 7.5px;
     background-color: #707070;
-	padding: 10px 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 
