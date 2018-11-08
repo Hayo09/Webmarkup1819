@@ -25,10 +25,44 @@ h1 {
 	font-size: 3em;
 }
 
+h2 {
+	left: 25%;
+	text-transform: initial;
+	color: #737373;
+	text-align: left;
+	border-style: solid;
+	border-width: 1px;
+	margin-top: 0%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 0%;
+	background-color: #F2F2F2;
+	font-weight: normal;
+	padding-bottom: 2%;
+}
+
+p {
+	border-style: solid;
+	border-width: 1px;
+	background-color: #FFFFFF;
+	width: 90%;
+	margin-left: 2%;
+	margin-bottom: 0%;
+	padding-bottom: 4px;
+	padding-top: 2px;
+	font-size: 0.95em;
+}
+
+select {
+	font-size: 0.75em;
+	margin-left: 10%;
+	width: 75%;
+}
+
 section {
 	background-color: #2699FB;
 	position: relative;
-	height: 14%;
+	height: 7%;
 	left: 25%;
 	width: 50%;
 	padding-top: 10px;
@@ -40,6 +74,7 @@ img {
 	left: 25%;
 	width: 50%;
 	height: 40%;
+	object-fit: cover;
 }
 
 nav {
@@ -59,9 +94,36 @@ nav a {
     text-decoration: none;
 }
 
+fieldset{
+	left: 25%;
+	border-style: none;
+	margin-bottom: 0%;
+}
+
+input {
+	width: 90%;
+	height: 4%;
+	margin-left: 2%;
+	font-size: 0.82em;
+}
+
+input.button {
+	width: 86%;
+	background-color:#2699FB; 
+	color:#FFFFFF;
+	margin-left: 4%;
+	font-size: 1em;
+}
+
+textarea {
+	margin-left: 2%;
+	width: 90%;
+	height: 13%;
+	font-size: 1em;
+}
 
 form {
-	background-color: #F2F2F2;
+	margin-bottom: 0%;
 }
 
 footer {

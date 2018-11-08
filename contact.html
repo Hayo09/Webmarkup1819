@@ -1,8 +1,3 @@
-COMPANY NAME
-Home
-Product
-Contact
-More information
 <!DOCTYPE html5>
 <html lang = "en" >
 	<head>
@@ -11,16 +6,26 @@ More information
 		
 		<title> Contact </title>
 	</head> 
-	<body>
-		<collum>
-			<form action="nowhere.php" method="post">
+	<body style="background-image:url('img/background.jpeg')">
+		<h1 style="background-image:url('img/companylogoBG.jpg')"> InFunland </h1>
+		<nav> 
+			<a href="index.html">Home</a>
+			<a href="product.html">Products</a>
+			<a href="blogger.nl">Blog</a>
+		</nav>
+		<section> Contact </section>
+		<form action="nowhere.php" method="post">
+			<h2>
 				<fieldset>
+					More information <br>
+					<p>
 					<label >Select topic</label>
 					<select>
 						<option value="general">General inquiries</option>
 						<option value="press">Press relations</option>
 						<option value="recruitement">Recruitement</option>
-					</select>
+					</select> 
+					</p>
 				</fieldset>
 				<fieldset class="contactFormFieldset">
 					<input
@@ -38,18 +43,16 @@ More information
 				</fieldset>
 				<fieldset>
 					<textarea
-							rows="7"
-							cols="40"
 							name="message"
 							placeholder="Write something.."
 					></textarea>
 				</fieldset>
-				<input
+				<input class="button"
 						type="submit"
 						value="Submit"
 				/>
-			</form>
-		</collum>
+			</h2>
+		</form>
 		<footer> 2018 - Hayo Bos - Inholland </footer>
 	</body>
 </html>
