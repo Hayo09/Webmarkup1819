@@ -1,4 +1,8 @@
 
+* {
+    box-sizing: border-box;
+}
+
 
 body {
 	background-image:url('img/background.jpeg');
@@ -8,6 +12,7 @@ body {
 	color: #FFFFFF;
 	text-align: center;	
 	font-weight: bold;
+	
 }
 
 h1 {
@@ -15,7 +20,7 @@ h1 {
 	background-size: 100% 140%;
 	position: relative;
 	left: 25%;
-	width: 25%;
+	width: 50%;
 	height: 14%;
 	padding-left: 12.5%;
 	padding-right: 12.5%;
@@ -23,6 +28,7 @@ h1 {
 	padding-bottom: 20px;
 	margin-bottom: 0px;
 	font-size: 3em;
+	object-fit: cover;
 }
 
 h2 {
@@ -41,7 +47,11 @@ h2 {
 	padding-bottom: 2%;
 }
 
-p {
+p.text{
+	
+}
+
+p.form {
 	border-style: solid;
 	border-width: 1px;
 	background-color: #FFFFFF;
@@ -56,7 +66,7 @@ p {
 select {
 	font-size: 0.75em;
 	margin-left: 10%;
-	width: 75%;
+	width: 74%;
 }
 
 section {
@@ -65,9 +75,25 @@ section {
 	height: 7%;
 	left: 25%;
 	width: 50%;
-	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 3.2em;
+}
+
+section.hiddenT {
+	
+}
+
+section.hiddenM {
+	
+}
+
+section.mobiel {
+	
+}
+
+section.products {
+	width: 100%;
+	display: none;
 }
 	
 img {
@@ -77,7 +103,22 @@ img {
 	object-fit: cover;
 }
 
-nav {
+img.gallery {
+	width: 30%;
+	height: 20%;
+	margin: 2% 0% 0% 2%;
+	object-fit: fill;
+}
+
+img.half {
+	
+}
+
+img.hidden {
+	
+}
+
+nav.web {
 	position: relative;
 	left: 25%;
 	width: 50%;
@@ -89,7 +130,7 @@ nav {
 }
 
 
-nav a {
+nav.web a {
     color: white;
     text-decoration: none;
 }
@@ -100,11 +141,16 @@ fieldset{
 	margin-bottom: 0%;
 }
 
+label {
+	padding-left: 1%;
+}
+
 input {
 	width: 90%;
 	height: 4%;
 	margin-left: 2%;
 	font-size: 0.82em;
+	padding-left: 1%;
 }
 
 input.button {
@@ -120,6 +166,7 @@ textarea {
 	width: 90%;
 	height: 13%;
 	font-size: 1em;
+	padding-left: 1%;
 }
 
 form {
@@ -136,3 +183,122 @@ footer {
 	font-size: 1em;
 	text-transform: capitalize;
 }
+
+section.hiddenNav {
+	display: none;
+}
+
+section.nav {
+	background-color: #FFFFFF;
+	width: 6%;
+	height: 2%;
+	margin: 0%;
+	border: solid 2px #808080;
+}
+
+button.dropbtn {
+    background-color: #808080;
+    border: solid 2px #FFFFFF;
+	width: 100%;
+}
+
+nav.mobiel {
+	width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+
+nav.content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	font-size: 0.5em;
+}
+
+nav.content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+nav.content a:hover {background-color: #f1f1f1}
+
+nav.mobiel:active nav.content {
+    display: block;
+}
+
+nav.mobiel:hover button.dropbtn {
+    background-color: #595959;
+}
+
+@media only screen and (max-width: 768px) {
+	/*tablet*/
+	h1, nav.web, h2, footer, section {
+		width: 100%;
+		left: 0%;
+		margin: 0%;
+	}
+	section.hiddenT, section.mobiel, img.hidden, p.text {
+		display: none;
+	}
+	img {
+		left: 0%;
+		width: 100%;
+		height: 39%;
+	}
+	img.half {
+		width: 49.5%;
+		height: 39%;
+	}
+	img.gallery {
+		width: 46.5%;
+		height: 25%;
+		object-fit: cover;
+	}
+	select{
+		margin-left: 2%;
+		width: 95%
+	}
+	input, textarea, label {
+		padding-left: 2%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	/*Mobiel*/
+	section.hiddenM, nav.web {
+		display: none;
+	}
+	img, img.half, img.hidden {
+		width: 100%;
+		height: 30%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		display: inherit;
+		object-fit: cover;
+	}
+	img.gallery {
+		width: 97%;
+		height: 30%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		display: initial;
+		object-fit: cover;
+	}
+	section.mobiel {
+		left: 0%;
+		width: 100%;
+		display: inherit;
+	}
+	section.products {
+		display: inherit;
+	}
+	section.hiddenNav {
+		display: inherit;
+}
+
