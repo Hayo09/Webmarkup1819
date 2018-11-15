@@ -228,7 +228,7 @@ nav.content a {
 
 nav.content a:hover {background-color: #f1f1f1}
 
-nav.mobiel:active nav.content {
+nav.mobiel:hover nav.content {
     display: block;
 }
 
