@@ -48,6 +48,7 @@ h2 {
 }
 
 p.text{
+	margin-bottom: 0%;
 	
 }
 
@@ -56,6 +57,7 @@ p.form {
 	border-width: 1px;
 	background-color: #FFFFFF;
 	width: 90%;
+	margin-top: 0%;
 	margin-left: 2%;
 	margin-bottom: 0%;
 	padding-bottom: 4px;
@@ -151,6 +153,8 @@ input {
 	margin-left: 2%;
 	font-size: 0.82em;
 	padding-left: 1%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
 }
 
 input.button {
@@ -167,6 +171,8 @@ textarea {
 	height: 13%;
 	font-size: 1em;
 	padding-left: 1%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
 }
 
 form {
@@ -300,5 +306,17 @@ nav.mobiel:hover button.dropbtn {
 	}
 	section.hiddenNav {
 		display: inherit;
+	}
+	section {
+		font-size: 2.7em
+	}
+	input {
+		height: 7%;
+		font-size: 0.7em;
+	}
+	textarea {
+		height: 23%;
+		font-size: 0.8em;
+	}
 }
 
