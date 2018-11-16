@@ -316,7 +316,7 @@ nav.mobiel:hover button.dropbtn {
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 360px) {
 	/*Mobiel*/
 	h2.hiddenM, nav.web {
 		display: none;
