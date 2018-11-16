@@ -113,6 +113,13 @@ h2.products {
 	width: 100%;
 	display: none;
 }
+
+svg {
+	position: relative;
+	width: 50%;
+	height: 40%;
+	object-fit: cover;
+}
 	
 img {
 	position: relative;
